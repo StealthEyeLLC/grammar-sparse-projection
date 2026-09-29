@@ -1,0 +1,52 @@
+name: Replication report
+description: Report an independent GSP reproduction, including negative results.
+title: "[replication] "
+labels: ["replication"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing GSP. Negative results are explicitly welcome.
+  - type: input
+    id: commit
+    attributes:
+      label: GSP commit SHA
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU and driver
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and dtype
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, PyTorch, CUDA, Triton, Transformers, XGrammar, and serving stack if any.
+    validations:
+      required: true
+  - type: textarea
+    id: workload
+    attributes:
+      label: Workload and baseline
+      description: Grammar/schema, batch size, baseline definition, and GSP route.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Results
+      description: Raw samples or a link to them, speedups/slowdowns, support/top-1 agreement, and any failures.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes

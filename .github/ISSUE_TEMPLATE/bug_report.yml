@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a correctness, portability, or reproducibility defect.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: commit
+    attributes:
+      label: GSP commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+    validations:
+      required: true

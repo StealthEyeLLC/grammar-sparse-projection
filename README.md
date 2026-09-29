@@ -84,3 +84,21 @@ Primary result files:
 The current target is MLSys 2027. The research submission deadline is October 30, 2026.
 
 See paper/draft.md for the working paper and paper/references.bib for references.
+
+## Replication wanted
+
+**Independent tests are wanted, including negative results.** If you have a different GPU, model, serving stack, or batching regime, see REPLICATION.md and open a Replication report issue with the raw evidence.
+
+High-value targets include H100/H200, B100/B200, A100, RTX 4090/5090, other large-vocabulary models, and integration experiments with XGrammar, vLLM, or SGLang.
+
+## Citation
+
+GitHub renders the repository's CITATION.cff into copyable citation formats. Until a DOI or archival paper identifier is assigned, cite version 0.1.0 and include the repository URL plus the exact commit SHA used.
+
+## License
+
+- GSP software: **Apache-2.0** (LICENSE)
+- GSP paper/original figures: **CC BY 4.0** (paper/LICENSE.md)
+- Third-party conference/LaTeX material: retains upstream terms (THIRD_PARTY.md)
+
+See LICENSING.md for scope.

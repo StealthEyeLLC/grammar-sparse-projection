@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use GSP in research or benchmarking, please cite this software artifact and link the repository."
+title: "GSP: Grammar-Conditioned Sparse Projection"
+version: 0.1.0
+date-released: 2026-09-29
+authors:
+  - name: "StealthEyeLLC"
+repository-code: "https://github.com/StealthEyeLLC/grammar-sparse-projection"
+url: "https://github.com/StealthEyeLLC/grammar-sparse-projection"
+license: Apache-2.0
+type: software
+keywords:
+  - llm-inference
+  - structured-generation
+  - constrained-decoding
+  - grammar-constrained-decoding
+  - triton
+  - xgrammar
+  - sparse-projection
+  - inference-optimization
+  - ml-systems
+  - research-software
+preferred-citation:
+  type: unpublished
+  title: "GSP: Grammar-Conditioned Sparse Output Projection for Exact Structured LLM Decoding"
+  authors:
+    - name: "StealthEyeLLC"
+  year: 2026
+  url: "https://github.com/StealthEyeLLC/grammar-sparse-projection"
