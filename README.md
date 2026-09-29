@@ -91,9 +91,23 @@ See paper/draft.md for the working paper and paper/references.bib for references
 
 High-value targets include H100/H200, B100/B200, A100, RTX 4090/5090, other large-vocabulary models, and integration experiments with XGrammar, vLLM, or SGLang.
 
+Community replication threads:
+- GSP discussion: https://github.com/StealthEyeLLC/grammar-sparse-projection/discussions/2
+- SGLang Show and tell: https://github.com/sgl-project/sglang/discussions/41638
+- Triton Show and tell: https://github.com/triton-lang/triton/discussions/12019
+
+## Release artifacts
+
+Version v0.1.1 is the metadata-only archival release; the scientific evidence and runtime results are unchanged from v0.1.0.
+
+- Release: https://github.com/StealthEyeLLC/grammar-sparse-projection/releases/tag/v0.1.1
+- Verified preprint PDF: https://github.com/StealthEyeLLC/grammar-sparse-projection/releases/download/v0.1.1/GSP_Grammar_Conditioned_Sparse_Projection_Preprint.pdf
+- Preprint source package: https://github.com/StealthEyeLLC/grammar-sparse-projection/releases/download/v0.1.1/GSP_Preprint_Source.zip
+- SHA-256 checksums: https://github.com/StealthEyeLLC/grammar-sparse-projection/releases/download/v0.1.1/GSP_SHA256SUMS.txt
+
 ## Citation
 
-GitHub renders the repository's CITATION.cff into copyable citation formats. Until a DOI or archival paper identifier is assigned, cite version 0.1.0 and include the repository URL plus the exact commit SHA used.
+GitHub renders the repository's CITATION.cff into copyable citation formats. Until a DOI or archival paper identifier is assigned, cite version 0.1.1 and include the repository URL plus the exact commit SHA used.
 
 ## License
 
