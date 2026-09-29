@@ -1,0 +1,43 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "GSP: Grammar-Conditioned Sparse Projection",
+  "description": "Grammar-aware sparse LM-head execution for exact structured LLM decoding, with direct packed-mask row-sparse projection, batched block-GEMM, adaptive dense fallback, raw evidence, and reproducibility artifacts.",
+  "codeRepository": "https://github.com/StealthEyeLLC/grammar-sparse-projection",
+  "version": "0.1.0",
+  "datePublished": "2026-09-29",
+  "license": "https://spdx.org/licenses/Apache-2.0.html",
+  "programmingLanguage": [
+    "Python",
+    "Triton"
+  ],
+  "runtimePlatform": [
+    "Python 3.12",
+    "PyTorch",
+    "CUDA",
+    "Triton"
+  ],
+  "applicationCategory": "Machine learning systems / LLM inference",
+  "keywords": [
+    "llm inference",
+    "structured generation",
+    "constrained decoding",
+    "grammar-constrained decoding",
+    "Triton",
+    "XGrammar",
+    "sparse projection",
+    "inference optimization",
+    "ML systems",
+    "research software"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "StealthEyeLLC",
+    "url": "https://github.com/StealthEyeLLC"
+  },
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "name": "GSP: Grammar-Conditioned Sparse Output Projection for Exact Structured LLM Decoding",
+    "datePublished": "2026"
+  }
+}

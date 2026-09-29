@@ -102,3 +102,11 @@ GitHub renders the repository's CITATION.cff into copyable citation formats. Unt
 - Third-party conference/LaTeX material: retains upstream terms (THIRD_PARTY.md)
 
 See LICENSING.md for scope.
+
+## Preservation
+
+The public repository is independently archived by Software Heritage. The first successful full snapshot of the public GSP repository is:
+
+swh:1:snp:f7ea97e93f115b79ec140930838c59bc8eed9f2a
+
+Software Heritage origin: https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/StealthEyeLLC/grammar-sparse-projection

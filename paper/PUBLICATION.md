@@ -30,3 +30,13 @@ The code, raw results, analysis, tests, manuscript, and reproducibility instruct
 A dedicated repository should be used; do not merge this work into an unrelated public StealthEyeLLC project.
 
 Preferred repository name: StealthEyeLLC/grammar-sparse-projection
+
+## Public distribution and preservation
+
+- Public repository: https://github.com/StealthEyeLLC/grammar-sparse-projection
+- Software license: Apache-2.0
+- Paper/original-figure license: CC BY 4.0
+- First Software Heritage full snapshot: swh:1:snp:f7ea97e93f115b79ec140930838c59bc8eed9f2a
+- Software Heritage save request: 2513640
+
+The immutable experimental checkpoint remains f9a9976a9126cf380c99661c4ee7f53f37099abe.
