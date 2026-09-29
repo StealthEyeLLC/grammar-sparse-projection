@@ -1,0 +1,146 @@
+[
+  {
+    "dtype": "float16",
+    "k": 1,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 4,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 16,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 64,
+    "max_abs_logit_error": 1.52587890625e-05,
+    "mean_abs_logit_error": 2.384185791015625e-07,
+    "probability_l1": 1.401298464324817e-45,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 256,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 1024,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 4096,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 16384,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "float16",
+    "k": 32768,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 1,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 4,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 16,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 64,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 256,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 1024,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 4096,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 16384,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  },
+  {
+    "dtype": "bfloat16",
+    "k": 32768,
+    "max_abs_logit_error": 0.0,
+    "mean_abs_logit_error": 0.0,
+    "probability_l1": 0.0,
+    "top1_token_match": true
+  }
+]

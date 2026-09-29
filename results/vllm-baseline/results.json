@@ -1,0 +1,139 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "vllm_version": "0.30.0",
+  "mode": "baseline",
+  "cases": [
+    {
+      "case": "enum_record",
+      "wall_median_s": 0.09939883900000268,
+      "decode_tps_median": null,
+      "tokens_median": 16.0,
+      "trials": [
+        {
+          "trial": 0,
+          "wall_s": 0.10534335100000192,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        },
+        {
+          "trial": 1,
+          "wall_s": 0.09047317600000326,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        },
+        {
+          "trial": 2,
+          "wall_s": 0.11133047999999235,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        },
+        {
+          "trial": 3,
+          "wall_s": 0.11113551500000085,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        },
+        {
+          "trial": 4,
+          "wall_s": 0.09345432700000345,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        },
+        {
+          "trial": 5,
+          "wall_s": 0.09279495299999496,
+          "tokens": 16,
+          "text": "{\"kind\":\"delete\",\"status\":\"done\",\"priority\":1}"
+        }
+      ]
+    },
+    {
+      "case": "nested_array",
+      "wall_median_s": 0.35567235249999385,
+      "decode_tps_median": null,
+      "tokens_median": 64.0,
+      "trials": [
+        {
+          "trial": 0,
+          "wall_s": 0.35310840399999677,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        },
+        {
+          "trial": 1,
+          "wall_s": 0.35123544499998616,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        },
+        {
+          "trial": 2,
+          "wall_s": 0.3610702809999964,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        },
+        {
+          "trial": 3,
+          "wall_s": 0.35823630099999093,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        },
+        {
+          "trial": 4,
+          "wall_s": 0.3485262220000038,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        },
+        {
+          "trial": 5,
+          "wall_s": 0.36649224900000377,
+          "tokens": 64,
+          "text": "{\"items\": [{\"id\": 1, \"label\": \"alpha\"}, {\"id\": 2, \"label\": \"beta\"}, {\"id\": 3, \"label\": \"gamma\"}] \n\n    \n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\n    "
+        }
+      ]
+    },
+    {
+      "case": "free_string",
+      "wall_median_s": 0.0747592280000049,
+      "decode_tps_median": null,
+      "tokens_median": 11.0,
+      "trials": [
+        {
+          "trial": 0,
+          "wall_s": 0.09323800999999321,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        },
+        {
+          "trial": 1,
+          "wall_s": 0.09062167599999782,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        },
+        {
+          "trial": 2,
+          "wall_s": 0.07463056900000709,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        },
+        {
+          "trial": 3,
+          "wall_s": 0.0748878870000027,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        },
+        {
+          "trial": 4,
+          "wall_s": 0.0708078979999982,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        },
+        {
+          "trial": 5,
+          "wall_s": 0.07010190700000862,
+          "tokens": 11,
+          "text": "{\"message\": \"error: invalid JSON syntax\"}"
+        }
+      ]
+    }
+  ]
+}

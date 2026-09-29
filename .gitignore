@@ -1,0 +1,11 @@
+vendor/
+**/__pycache__/
+*.pyc
+__MACOSX/
+.DS_Store
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz

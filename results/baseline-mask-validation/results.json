@@ -1,0 +1,30 @@
+[
+  {
+    "batch": 1,
+    "mask": "sparse",
+    "xgrammar_ms": 2.7747199535369873,
+    "our_dense_ms": 2.833024024963379,
+    "our_over_stock": 1.021012596731454
+  },
+  {
+    "batch": 1,
+    "mask": "free",
+    "xgrammar_ms": 2.773680090904236,
+    "our_dense_ms": 3.2183680534362793,
+    "our_over_stock": 1.160324171482614
+  },
+  {
+    "batch": 8,
+    "mask": "sparse",
+    "xgrammar_ms": 2.8568639755249023,
+    "our_dense_ms": 2.820191979408264,
+    "our_over_stock": 0.9871635484115409
+  },
+  {
+    "batch": 8,
+    "mask": "free",
+    "xgrammar_ms": 2.861631989479065,
+    "our_dense_ms": 2.821071982383728,
+    "our_over_stock": 0.9858262672333628
+  }
+]

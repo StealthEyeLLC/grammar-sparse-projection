@@ -1,0 +1,649 @@
+{
+  "enum_record": [
+    {
+      "step": 0,
+      "token_id": 4913,
+      "token_text": "{\"",
+      "need_apply": true,
+      "allowed_k": 7,
+      "density": 4.6072030328559395e-05,
+      "mask_us": 51.3
+    },
+    {
+      "step": 1,
+      "token_id": 15314,
+      "token_text": "kind",
+      "need_apply": true,
+      "allowed_k": 4,
+      "density": 2.632687447346251e-05,
+      "mask_us": 8.1
+    },
+    {
+      "step": 2,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 2.9
+    },
+    {
+      "step": 3,
+      "token_id": 3182,
+      "token_text": "create",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 2.0
+    },
+    {
+      "step": 4,
+      "token_id": 2198,
+      "token_text": "\",\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 2.1
+    },
+    {
+      "step": 5,
+      "token_id": 2829,
+      "token_text": "status",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 1.8
+    },
+    {
+      "step": 6,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 1.7
+    },
+    {
+      "step": 7,
+      "token_id": 2307,
+      "token_text": "ready",
+      "need_apply": true,
+      "allowed_k": 14,
+      "density": 9.214406065711879e-05,
+      "mask_us": 1.8
+    },
+    {
+      "step": 8,
+      "token_id": 2198,
+      "token_text": "\",\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 1.6
+    },
+    {
+      "step": 9,
+      "token_id": 23582,
+      "token_text": "priority",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 2.3
+    },
+    {
+      "step": 10,
+      "token_id": 788,
+      "token_text": "\":",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.7
+    },
+    {
+      "step": 11,
+      "token_id": 18,
+      "token_text": "3",
+      "need_apply": true,
+      "allowed_k": 428,
+      "density": 0.0028169755686604887,
+      "mask_us": 2.6
+    },
+    {
+      "step": 12,
+      "token_id": 92,
+      "token_text": "}",
+      "need_apply": true,
+      "allowed_k": 424,
+      "density": 0.002790648694187026,
+      "mask_us": 2.1
+    }
+  ],
+  "tool_call": [
+    {
+      "step": 0,
+      "token_id": 4913,
+      "token_text": "{\"",
+      "need_apply": true,
+      "allowed_k": 7,
+      "density": 4.6072030328559395e-05,
+      "mask_us": 15.9
+    },
+    {
+      "step": 1,
+      "token_id": 606,
+      "token_text": "name",
+      "need_apply": true,
+      "allowed_k": 4,
+      "density": 2.632687447346251e-05,
+      "mask_us": 3.3
+    },
+    {
+      "step": 2,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 1.9
+    },
+    {
+      "step": 3,
+      "token_id": 1836,
+      "token_text": "search",
+      "need_apply": true,
+      "allowed_k": 4,
+      "density": 2.632687447346251e-05,
+      "mask_us": 2.1
+    },
+    {
+      "step": 4,
+      "token_id": 2198,
+      "token_text": "\",\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 1.7
+    },
+    {
+      "step": 5,
+      "token_id": 16370,
+      "token_text": "arguments",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 1.5
+    },
+    {
+      "step": 6,
+      "token_id": 22317,
+      "token_text": "\":{\"",
+      "need_apply": true,
+      "allowed_k": 14,
+      "density": 9.214406065711879e-05,
+      "mask_us": 1.7
+    },
+    {
+      "step": 7,
+      "token_id": 1631,
+      "token_text": "query",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 1.8
+    },
+    {
+      "step": 8,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 19,
+      "density": 0.0001250526537489469,
+      "mask_us": 1.6
+    },
+    {
+      "step": 9,
+      "token_id": 41094,
+      "token_text": "grammar",
+      "need_apply": true,
+      "allowed_k": 148328,
+      "density": 0.9762531592249368,
+      "mask_us": 474.5
+    },
+    {
+      "step": 10,
+      "token_id": 33444,
+      "token_text": " sparse",
+      "need_apply": true,
+      "allowed_k": 148298,
+      "density": 0.9760557076663858,
+      "mask_us": 511.0
+    },
+    {
+      "step": 11,
+      "token_id": 21615,
+      "token_text": " projection",
+      "need_apply": true,
+      "allowed_k": 148279,
+      "density": 0.9759306550126369,
+      "mask_us": 512.1
+    },
+    {
+      "step": 12,
+      "token_id": 2198,
+      "token_text": "\",\"",
+      "need_apply": true,
+      "allowed_k": 148236,
+      "density": 0.9756476411120472,
+      "mask_us": 526.0
+    },
+    {
+      "step": 13,
+      "token_id": 3481,
+      "token_text": "top",
+      "need_apply": true,
+      "allowed_k": 3,
+      "density": 1.9745155855096883e-05,
+      "mask_us": 3.6
+    },
+    {
+      "step": 14,
+      "token_id": 4698,
+      "token_text": "_k",
+      "need_apply": true,
+      "allowed_k": 2,
+      "density": 1.3163437236731255e-05,
+      "mask_us": 2.6
+    },
+    {
+      "step": 15,
+      "token_id": 788,
+      "token_text": "\":",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.9
+    },
+    {
+      "step": 16,
+      "token_id": 20,
+      "token_text": "5",
+      "need_apply": true,
+      "allowed_k": 431,
+      "density": 0.0028367207245155856,
+      "mask_us": 3.2
+    },
+    {
+      "step": 17,
+      "token_id": 1335,
+      "token_text": ",\"",
+      "need_apply": true,
+      "allowed_k": 435,
+      "density": 0.002863047598989048,
+      "mask_us": 2.6
+    },
+    {
+      "step": 18,
+      "token_id": 18675,
+      "token_text": "safe",
+      "need_apply": true,
+      "allowed_k": 3,
+      "density": 1.9745155855096883e-05,
+      "mask_us": 1.9
+    },
+    {
+      "step": 19,
+      "token_id": 788,
+      "token_text": "\":",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 2.0
+    },
+    {
+      "step": 20,
+      "token_id": 1866,
+      "token_text": "true",
+      "need_apply": true,
+      "allowed_k": 443,
+      "density": 0.002915701347935973,
+      "mask_us": 4.7
+    },
+    {
+      "step": 21,
+      "token_id": 3417,
+      "token_text": "}}",
+      "need_apply": true,
+      "allowed_k": 448,
+      "density": 0.0029486099410278013,
+      "mask_us": 6.7
+    }
+  ],
+  "nested_array": [
+    {
+      "step": 0,
+      "token_id": 4913,
+      "token_text": "{\"",
+      "need_apply": true,
+      "allowed_k": 7,
+      "density": 4.6072030328559395e-05,
+      "mask_us": 6.4
+    },
+    {
+      "step": 1,
+      "token_id": 3615,
+      "token_text": "items",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 2.7
+    },
+    {
+      "step": 2,
+      "token_id": 66582,
+      "token_text": "\":[{\"",
+      "need_apply": true,
+      "allowed_k": 15,
+      "density": 9.872577927548442e-05,
+      "mask_us": 1.9
+    },
+    {
+      "step": 3,
+      "token_id": 307,
+      "token_text": "id",
+      "need_apply": true,
+      "allowed_k": 2,
+      "density": 1.3163437236731255e-05,
+      "mask_us": 1.6
+    },
+    {
+      "step": 4,
+      "token_id": 788,
+      "token_text": "\":",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.6
+    },
+    {
+      "step": 5,
+      "token_id": 22,
+      "token_text": "7",
+      "need_apply": true,
+      "allowed_k": 432,
+      "density": 0.0028433024431339512,
+      "mask_us": 2.8
+    },
+    {
+      "step": 6,
+      "token_id": 1335,
+      "token_text": ",\"",
+      "need_apply": true,
+      "allowed_k": 445,
+      "density": 0.0029288647851727044,
+      "mask_us": 2.9
+    },
+    {
+      "step": 7,
+      "token_id": 1502,
+      "token_text": "label",
+      "need_apply": true,
+      "allowed_k": 4,
+      "density": 2.632687447346251e-05,
+      "mask_us": 1.6
+    },
+    {
+      "step": 8,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 1.8
+    },
+    {
+      "step": 9,
+      "token_id": 7141,
+      "token_text": "alpha",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.6
+    },
+    {
+      "step": 10,
+      "token_id": 36509,
+      "token_text": "\"},{\"",
+      "need_apply": true,
+      "allowed_k": 15,
+      "density": 9.872577927548442e-05,
+      "mask_us": 8.1
+    },
+    {
+      "step": 11,
+      "token_id": 307,
+      "token_text": "id",
+      "need_apply": true,
+      "allowed_k": 2,
+      "density": 1.3163437236731255e-05,
+      "mask_us": 1.5
+    },
+    {
+      "step": 12,
+      "token_id": 788,
+      "token_text": "\":",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.5
+    },
+    {
+      "step": 13,
+      "token_id": 23,
+      "token_text": "8",
+      "need_apply": true,
+      "allowed_k": 432,
+      "density": 0.0028433024431339512,
+      "mask_us": 2.1
+    },
+    {
+      "step": 14,
+      "token_id": 1335,
+      "token_text": ",\"",
+      "need_apply": true,
+      "allowed_k": 445,
+      "density": 0.0029288647851727044,
+      "mask_us": 2.5
+    },
+    {
+      "step": 15,
+      "token_id": 1502,
+      "token_text": "label",
+      "need_apply": true,
+      "allowed_k": 4,
+      "density": 2.632687447346251e-05,
+      "mask_us": 1.5
+    },
+    {
+      "step": 16,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 13,
+      "density": 8.556234203875316e-05,
+      "mask_us": 2.1
+    },
+    {
+      "step": 17,
+      "token_id": 19127,
+      "token_text": "beta",
+      "need_apply": true,
+      "allowed_k": 12,
+      "density": 7.898062342038753e-05,
+      "mask_us": 1.5
+    },
+    {
+      "step": 18,
+      "token_id": 9207,
+      "token_text": "\"}",
+      "need_apply": true,
+      "allowed_k": 15,
+      "density": 9.872577927548442e-05,
+      "mask_us": 7.1
+    },
+    {
+      "step": 19,
+      "token_id": 13989,
+      "token_text": "]}",
+      "need_apply": true,
+      "allowed_k": 449,
+      "density": 0.002955191659646167,
+      "mask_us": 3.8
+    }
+  ],
+  "free_string": [
+    {
+      "step": 0,
+      "token_id": 4913,
+      "token_text": "{\"",
+      "need_apply": true,
+      "allowed_k": 7,
+      "density": 4.6072030328559395e-05,
+      "mask_us": 15.3
+    },
+    {
+      "step": 1,
+      "token_id": 1994,
+      "token_text": "message",
+      "need_apply": true,
+      "allowed_k": 5,
+      "density": 3.2908593091828136e-05,
+      "mask_us": 4.3
+    },
+    {
+      "step": 2,
+      "token_id": 3252,
+      "token_text": "\":\"",
+      "need_apply": true,
+      "allowed_k": 17,
+      "density": 0.00011188921651221567,
+      "mask_us": 2.3
+    },
+    {
+      "step": 3,
+      "token_id": 97457,
+      "token_text": "Structured",
+      "need_apply": true,
+      "allowed_k": 148279,
+      "density": 0.9759306550126369,
+      "mask_us": 468.3
+    },
+    {
+      "step": 4,
+      "token_id": 47116,
+      "token_text": " decoding",
+      "need_apply": true,
+      "allowed_k": 148277,
+      "density": 0.9759174915754002,
+      "mask_us": 446.3
+    },
+    {
+      "step": 5,
+      "token_id": 1265,
+      "token_text": " should",
+      "need_apply": true,
+      "allowed_k": 148277,
+      "density": 0.9759174915754002,
+      "mask_us": 424.3
+    },
+    {
+      "step": 6,
+      "token_id": 5648,
+      "token_text": " avoid",
+      "need_apply": true,
+      "allowed_k": 148271,
+      "density": 0.97587800126369,
+      "mask_us": 413.1
+    },
+    {
+      "step": 7,
+      "token_id": 975,
+      "token_text": " work",
+      "need_apply": true,
+      "allowed_k": 148270,
+      "density": 0.9758714195450716,
+      "mask_us": 408.5
+    },
+    {
+      "step": 8,
+      "token_id": 429,
+      "token_text": " that",
+      "need_apply": true,
+      "allowed_k": 148269,
+      "density": 0.9758648378264533,
+      "mask_us": 403.3
+    },
+    {
+      "step": 9,
+      "token_id": 279,
+      "token_text": " the",
+      "need_apply": true,
+      "allowed_k": 148254,
+      "density": 0.9757661120471778,
+      "mask_us": 428.0
+    },
+    {
+      "step": 10,
+      "token_id": 31428,
+      "token_text": " grammar",
+      "need_apply": true,
+      "allowed_k": 148236,
+      "density": 0.9756476411120472,
+      "mask_us": 470.6
+    },
+    {
+      "step": 11,
+      "token_id": 2669,
+      "token_text": " already",
+      "need_apply": true,
+      "allowed_k": 148212,
+      "density": 0.9754896798652064,
+      "mask_us": 483.5
+    },
+    {
+      "step": 12,
+      "token_id": 18651,
+      "token_text": " proved",
+      "need_apply": true,
+      "allowed_k": 148177,
+      "density": 0.9752593197135636,
+      "mask_us": 504.1
+    },
+    {
+      "step": 13,
+      "token_id": 11997,
+      "token_text": " impossible",
+      "need_apply": true,
+      "allowed_k": 148164,
+      "density": 0.9751737573715249,
+      "mask_us": 476.1
+    },
+    {
+      "step": 14,
+      "token_id": 1189,
+      "token_text": ".\"",
+      "need_apply": true,
+      "allowed_k": 148136,
+      "density": 0.9749894692502106,
+      "mask_us": 427.0
+    },
+    {
+      "step": 15,
+      "token_id": 92,
+      "token_text": "}",
+      "need_apply": true,
+      "allowed_k": 424,
+      "density": 0.002790648694187026,
+      "mask_us": 4.4
+    }
+  ]
+}

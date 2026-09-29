@@ -1,0 +1,6 @@
+# Install a CUDA-capable PyTorch build appropriate for your platform first.
+numpy>=2.0
+transformers==5.17.0
+xgrammar==0.2.8
+triton-windows==3.7.1.post27; platform_system == "Windows"
+triton==3.7.1; platform_system != "Windows"

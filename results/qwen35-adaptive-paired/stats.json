@@ -1,0 +1,94 @@
+[
+  {
+    "case": "enum_record",
+    "n": 30,
+    "gpu_median": 1.0755774291365578,
+    "gpu_median_bootstrap_95ci": [
+      1.066487674538713,
+      1.0779533300859117
+    ],
+    "gpu_mean": 1.0519492968856012,
+    "gpu_mean_bootstrap_95ci": [
+      1.0214761956407987,
+      1.0748498692136237
+    ],
+    "wall_median": 1.0752822362313486,
+    "wall_median_bootstrap_95ci": [
+      1.0658311342070386,
+      1.077561330118857
+    ],
+    "wins_vs_1": 27,
+    "losses_vs_1": 3,
+    "ties": 0,
+    "two_sided_sign_test_p": 8.430331945419312e-06
+  },
+  {
+    "case": "tool_call",
+    "n": 30,
+    "gpu_median": 1.0642078868498777,
+    "gpu_median_bootstrap_95ci": [
+      1.0610689004457357,
+      1.0698004110490094
+    ],
+    "gpu_mean": 1.0630165548097954,
+    "gpu_mean_bootstrap_95ci": [
+      1.0424626307220601,
+      1.0831583827258229
+    ],
+    "wall_median": 1.0637533756536137,
+    "wall_median_bootstrap_95ci": [
+      1.0607175217466436,
+      1.06940199961613
+    ],
+    "wins_vs_1": 28,
+    "losses_vs_1": 2,
+    "ties": 0,
+    "two_sided_sign_test_p": 8.67992639541626e-07
+  },
+  {
+    "case": "nested_array",
+    "n": 30,
+    "gpu_median": 1.0841554123964157,
+    "gpu_median_bootstrap_95ci": [
+      1.081001209656828,
+      1.0878459376369691
+    ],
+    "gpu_mean": 1.0933165149946298,
+    "gpu_mean_bootstrap_95ci": [
+      1.0774394154957108,
+      1.1100480816722422
+    ],
+    "wall_median": 1.0834096716222579,
+    "wall_median_bootstrap_95ci": [
+      1.0784628303731703,
+      1.0867724179843201
+    ],
+    "wins_vs_1": 28,
+    "losses_vs_1": 2,
+    "ties": 0,
+    "two_sided_sign_test_p": 8.67992639541626e-07
+  },
+  {
+    "case": "free_string",
+    "n": 30,
+    "gpu_median": 1.012794706653759,
+    "gpu_median_bootstrap_95ci": [
+      1.008382006309285,
+      1.0153257704324652
+    ],
+    "gpu_mean": 0.9998398808460525,
+    "gpu_mean_bootstrap_95ci": [
+      0.9809806378689284,
+      1.0149330807959767
+    ],
+    "wall_median": 1.0126598770078723,
+    "wall_median_bootstrap_95ci": [
+      1.0082436892173585,
+      1.015714983543372
+    ],
+    "wins_vs_1": 26,
+    "losses_vs_1": 4,
+    "ties": 0,
+    "two_sided_sign_test_p": 5.947612226009369e-05
+  }
+]

@@ -1,0 +1,214 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "vocab": 248320,
+  "hidden": 2048,
+  "mask_meta": {
+    "sparse": {
+      "allowed_k": 2
+    },
+    "free": {
+      "allowed_k": 246620
+    }
+  },
+  "rows": [
+    {
+      "batch": 1,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 2.960479974746704,
+      "gsp_ms": 0.45766401290893555,
+      "speedup": 6.468675472055896,
+      "dense_tokens_per_s": 337.7830650874641,
+      "gsp_tokens_per_s": 2185.009028007139,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 1,
+      "scenario": "all_free",
+      "dense_masked_ms": 2.7720800638198853,
+      "gsp_ms": 2.7891520261764526,
+      "speedup": 0.9938791567485941,
+      "dense_tokens_per_s": 360.7399414799062,
+      "gsp_tokens_per_s": 358.53190884358634,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 1,
+      "scenario": "mixed",
+      "dense_masked_ms": 5.577088117599487,
+      "gsp_ms": 0.6889599859714508,
+      "speedup": 8.094937632314965,
+      "dense_tokens_per_s": 179.3050385638203,
+      "gsp_tokens_per_s": 1451.4631043339548,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 2,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 2.7901920080184937,
+      "gsp_ms": 0.8329280018806458,
+      "speedup": 3.3498597738563167,
+      "dense_tokens_per_s": 716.796548141623,
+      "gsp_tokens_per_s": 2401.1679226586857,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 2,
+      "scenario": "all_free",
+      "dense_masked_ms": 2.7798240184783936,
+      "gsp_ms": 2.835439920425415,
+      "speedup": 0.9803854415865467,
+      "dense_tokens_per_s": 719.4700048295684,
+      "gsp_tokens_per_s": 705.3579183931114,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 2,
+      "scenario": "mixed",
+      "dense_masked_ms": 4.154160022735596,
+      "gsp_ms": 2.7630720138549805,
+      "speedup": 1.5034570224392372,
+      "dense_tokens_per_s": 481.44510299412127,
+      "gsp_tokens_per_s": 723.8320210154934,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 4,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 2.8094561100006104,
+      "gsp_ms": 1.5614719986915588,
+      "speedup": 1.7992356650358152,
+      "dense_tokens_per_s": 1423.7631211826017,
+      "gsp_tokens_per_s": 2561.6853861944464,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 4,
+      "scenario": "all_free",
+      "dense_masked_ms": 2.8006880283355713,
+      "gsp_ms": 4.945184230804443,
+      "speedup": 0.5663465500212471,
+      "dense_tokens_per_s": 1428.2204799429842,
+      "gsp_tokens_per_s": 808.8677414853989,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 4,
+      "scenario": "mixed",
+      "dense_masked_ms": 2.983504056930542,
+      "gsp_ms": 2.957263946533203,
+      "speedup": 1.0088731039473497,
+      "dense_tokens_per_s": 1340.705399983682,
+      "gsp_tokens_per_s": 1352.6016183605102,
+      "finite_match": true,
+      "top1_match": true
+    },
+    {
+      "batch": 8,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 3.0426080226898193,
+      "gsp_ms": 3.1912800073623657,
+      "speedup": 0.9534130554731781,
+      "dense_tokens_per_s": 2629.3232451703047,
+      "gsp_tokens_per_s": 2506.831109004472,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 8,
+      "scenario": "all_free",
+      "dense_masked_ms": 2.995711922645569,
+      "gsp_ms": 6.630320072174072,
+      "speedup": 0.4518201067272578,
+      "dense_tokens_per_s": 2670.483746960239,
+      "gsp_tokens_per_s": 1206.5782515649823,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 8,
+      "scenario": "mixed",
+      "dense_masked_ms": 3.0167040824890137,
+      "gsp_ms": 4.86193585395813,
+      "speedup": 0.6204738550865696,
+      "dense_tokens_per_s": 2651.90081003881,
+      "gsp_tokens_per_s": 1645.435118911977,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 16,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 3.0798239707946777,
+      "gsp_ms": 6.1945600509643555,
+      "speedup": 0.4971820347944189,
+      "dense_tokens_per_s": 5195.102107043984,
+      "gsp_tokens_per_s": 2582.9114365449013,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 16,
+      "scenario": "all_free",
+      "dense_masked_ms": 3.1484320163726807,
+      "gsp_ms": 11.657983779907227,
+      "speedup": 0.27006659777645836,
+      "dense_tokens_per_s": 5081.894707205289,
+      "gsp_tokens_per_s": 1372.4500138331232,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 16,
+      "scenario": "mixed",
+      "dense_masked_ms": 3.05184006690979,
+      "gsp_ms": 9.258560180664062,
+      "speedup": 0.32962361397006107,
+      "dense_tokens_per_s": 5242.738691808698,
+      "gsp_tokens_per_s": 1728.1304746946532,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 32,
+      "scenario": "all_sparse",
+      "dense_masked_ms": 3.892624020576477,
+      "gsp_ms": 12.892223834991455,
+      "speedup": 0.30193580800321695,
+      "dense_tokens_per_s": 8220.675778304674,
+      "gsp_tokens_per_s": 2482.116383454896,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 32,
+      "scenario": "all_free",
+      "dense_masked_ms": 3.734112024307251,
+      "gsp_ms": 22.760591506958008,
+      "speedup": 0.1640604121894511,
+      "dense_tokens_per_s": 8569.64113333922,
+      "gsp_tokens_per_s": 1405.9388566513073,
+      "finite_match": null,
+      "top1_match": null
+    },
+    {
+      "batch": 32,
+      "scenario": "mixed",
+      "dense_masked_ms": 3.7649120092391968,
+      "gsp_ms": 18.380623817443848,
+      "speedup": 0.20483048054474437,
+      "dense_tokens_per_s": 8499.534629619797,
+      "gsp_tokens_per_s": 1740.9637625917187,
+      "finite_match": null,
+      "top1_match": null
+    }
+  ]
+}

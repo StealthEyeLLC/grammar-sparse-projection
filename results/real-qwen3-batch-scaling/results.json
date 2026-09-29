@@ -1,0 +1,940 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "vocab_size": 151936,
+  "hidden_size": 1024,
+  "dtype": "float16",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "torch": "2.13.0+cu130",
+  "cuda_runtime": "13.0",
+  "batches": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "ks": [
+    13,
+    428,
+    4096,
+    32768
+  ],
+  "head_repeats": 80,
+  "decode_steps": 20,
+  "method_note": "Transformer decode and LM-head kernels are timed separately on real Qwen3-0.6B hidden states. Projected totals sum their medians. Prepacked represents legal rows ready when the transformer finishes; dynamic additionally pays GPU row gathering.",
+  "rows": [
+    {
+      "batch": 1,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 30.747648239135742,
+      "dense_head_median_ms": 0.9186879992485046,
+      "dense_head_fraction_of_transformer_plus_head": 0.02901150269903722,
+      "prepacked_head_median_ms": 0.030912000685930252,
+      "dynamic_head_median_ms": 0.040431998670101166,
+      "head_speedup_prepacked": 29.719461013943686,
+      "head_speedup_dynamic": 22.721805240062498,
+      "projected_total_speedup_prepacked": 1.0288439742354796,
+      "projected_total_speedup_dynamic": 1.028525844865766,
+      "decode": {
+        "median_ms": 30.747648239135742,
+        "mean_ms": 39.66506547927857,
+        "p10_ms": 29.60710334777832,
+        "p90_ms": 72.78694152832031
+      },
+      "dense": {
+        "median_ms": 0.9186879992485046,
+        "mean_ms": 0.9190932013094425,
+        "p10_ms": 0.9148799777030945,
+        "p90_ms": 0.9227839708328247
+      },
+      "prepacked": {
+        "median_ms": 0.030912000685930252,
+        "mean_ms": 0.03354119996074587,
+        "p10_ms": 0.02691200003027916,
+        "p90_ms": 0.046911999583244324
+      },
+      "dynamic": {
+        "median_ms": 0.040431998670101166,
+        "mean_ms": 0.04278999986127019,
+        "p10_ms": 0.03782400116324425,
+        "p90_ms": 0.05206400156021118
+      }
+    },
+    {
+      "batch": 1,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 30.747648239135742,
+      "dense_head_median_ms": 0.9186879992485046,
+      "dense_head_fraction_of_transformer_plus_head": 0.02901150269903722,
+      "prepacked_head_median_ms": 0.026544000022113323,
+      "dynamic_head_median_ms": 0.05064000003039837,
+      "head_speedup_prepacked": 34.61000597058327,
+      "head_speedup_dynamic": 18.141548157524312,
+      "projected_total_speedup_prepacked": 1.0289900054010583,
+      "projected_total_speedup_dynamic": 1.0281849430227168,
+      "decode": {
+        "median_ms": 30.747648239135742,
+        "mean_ms": 39.66506547927857,
+        "p10_ms": 29.60710334777832,
+        "p90_ms": 72.78694152832031
+      },
+      "dense": {
+        "median_ms": 0.9186879992485046,
+        "mean_ms": 0.9190932013094425,
+        "p10_ms": 0.9148799777030945,
+        "p90_ms": 0.9227839708328247
+      },
+      "prepacked": {
+        "median_ms": 0.026544000022113323,
+        "mean_ms": 0.03687440029461868,
+        "p10_ms": 0.022431999444961548,
+        "p90_ms": 0.03855999931693077
+      },
+      "dynamic": {
+        "median_ms": 0.05064000003039837,
+        "mean_ms": 0.05750879999250173,
+        "p10_ms": 0.04678399860858917,
+        "p90_ms": 0.061216000467538834
+      }
+    },
+    {
+      "batch": 1,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 30.747648239135742,
+      "dense_head_median_ms": 0.9186879992485046,
+      "dense_head_fraction_of_transformer_plus_head": 0.02901150269903722,
+      "prepacked_head_median_ms": 0.03134400025010109,
+      "dynamic_head_median_ms": 0.04963199980556965,
+      "head_speedup_prepacked": 29.309851707442533,
+      "head_speedup_dynamic": 18.509993609917174,
+      "projected_total_speedup_prepacked": 1.028829533861831,
+      "projected_total_speedup_dynamic": 1.0282185956909293,
+      "decode": {
+        "median_ms": 30.747648239135742,
+        "mean_ms": 39.66506547927857,
+        "p10_ms": 29.60710334777832,
+        "p90_ms": 72.78694152832031
+      },
+      "dense": {
+        "median_ms": 0.9186879992485046,
+        "mean_ms": 0.9190932013094425,
+        "p10_ms": 0.9148799777030945,
+        "p90_ms": 0.9227839708328247
+      },
+      "prepacked": {
+        "median_ms": 0.03134400025010109,
+        "mean_ms": 0.030860000103712083,
+        "p10_ms": 0.02800000086426735,
+        "p90_ms": 0.03302399814128876
+      },
+      "dynamic": {
+        "median_ms": 0.04963199980556965,
+        "mean_ms": 0.05104479994624853,
+        "p10_ms": 0.046112000942230225,
+        "p90_ms": 0.058687999844551086
+      }
+    },
+    {
+      "batch": 1,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 30.747648239135742,
+      "dense_head_median_ms": 0.9186879992485046,
+      "dense_head_fraction_of_transformer_plus_head": 0.02901150269903722,
+      "prepacked_head_median_ms": 0.1934560015797615,
+      "dynamic_head_median_ms": 0.5842399895191193,
+      "head_speedup_prepacked": 4.74882139476935,
+      "head_speedup_dynamic": 1.5724497051368658,
+      "projected_total_speedup_prepacked": 1.0234391116757369,
+      "projected_total_speedup_dynamic": 1.0106743649565146,
+      "decode": {
+        "median_ms": 30.747648239135742,
+        "mean_ms": 39.66506547927857,
+        "p10_ms": 29.60710334777832,
+        "p90_ms": 72.78694152832031
+      },
+      "dense": {
+        "median_ms": 0.9186879992485046,
+        "mean_ms": 0.9190932013094425,
+        "p10_ms": 0.9148799777030945,
+        "p90_ms": 0.9227839708328247
+      },
+      "prepacked": {
+        "median_ms": 0.1934560015797615,
+        "mean_ms": 0.19429679866880178,
+        "p10_ms": 0.19088000059127808,
+        "p90_ms": 0.19808000326156616
+      },
+      "dynamic": {
+        "median_ms": 0.5842399895191193,
+        "mean_ms": 0.5829204015433789,
+        "p10_ms": 0.5535039901733398,
+        "p90_ms": 0.5911679863929749
+      }
+    },
+    {
+      "batch": 2,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 32.64656066894531,
+      "dense_head_median_ms": 0.9211840033531189,
+      "dense_head_fraction_of_transformer_plus_head": 0.027442534860357186,
+      "prepacked_head_median_ms": 0.033056000247597694,
+      "dynamic_head_median_ms": 0.04294399917125702,
+      "head_speedup_prepacked": 27.867376465792013,
+      "head_speedup_dynamic": 21.450820164175102,
+      "projected_total_speedup_prepacked": 1.0271768182624603,
+      "projected_total_speedup_dynamic": 1.0268661153816272,
+      "decode": {
+        "median_ms": 32.64656066894531,
+        "mean_ms": 44.67327756881714,
+        "p10_ms": 30.08675193786621,
+        "p90_ms": 74.2548828125
+      },
+      "dense": {
+        "median_ms": 0.9211840033531189,
+        "mean_ms": 0.9216256007552147,
+        "p10_ms": 0.9186239838600159,
+        "p90_ms": 0.92467200756073
+      },
+      "prepacked": {
+        "median_ms": 0.033056000247597694,
+        "mean_ms": 0.03546719993464649,
+        "p10_ms": 0.02921600081026554,
+        "p90_ms": 0.04620800167322159
+      },
+      "dynamic": {
+        "median_ms": 0.04294399917125702,
+        "mean_ms": 0.04579079975374043,
+        "p10_ms": 0.04057599976658821,
+        "p90_ms": 0.05241600051522255
+      }
+    },
+    {
+      "batch": 2,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 32.64656066894531,
+      "dense_head_median_ms": 0.9211840033531189,
+      "dense_head_fraction_of_transformer_plus_head": 0.027442534860357186,
+      "prepacked_head_median_ms": 0.026096000336110592,
+      "dynamic_head_median_ms": 0.054656000807881355,
+      "head_speedup_prepacked": 35.29981573760258,
+      "head_speedup_dynamic": 16.854215268898432,
+      "projected_total_speedup_prepacked": 1.0273956296874556,
+      "projected_total_speedup_dynamic": 1.0264983413704827,
+      "decode": {
+        "median_ms": 32.64656066894531,
+        "mean_ms": 44.67327756881714,
+        "p10_ms": 30.08675193786621,
+        "p90_ms": 74.2548828125
+      },
+      "dense": {
+        "median_ms": 0.9211840033531189,
+        "mean_ms": 0.9216256007552147,
+        "p10_ms": 0.9186239838600159,
+        "p90_ms": 0.92467200756073
+      },
+      "prepacked": {
+        "median_ms": 0.026096000336110592,
+        "mean_ms": 0.027333600004203616,
+        "p10_ms": 0.02393599972128868,
+        "p90_ms": 0.030751999467611313
+      },
+      "dynamic": {
+        "median_ms": 0.054656000807881355,
+        "mean_ms": 0.056434800196439025,
+        "p10_ms": 0.04864000156521797,
+        "p90_ms": 0.06972800195217133
+      }
+    },
+    {
+      "batch": 2,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 32.64656066894531,
+      "dense_head_median_ms": 0.9211840033531189,
+      "dense_head_fraction_of_transformer_plus_head": 0.027442534860357186,
+      "prepacked_head_median_ms": 0.02763199992477894,
+      "dynamic_head_median_ms": 0.0487040001899004,
+      "head_speedup_prepacked": 33.33757982993656,
+      "head_speedup_dynamic": 18.913929035835995,
+      "projected_total_speedup_prepacked": 1.027347332265677,
+      "projected_total_speedup_dynamic": 1.0266852099835377,
+      "decode": {
+        "median_ms": 32.64656066894531,
+        "mean_ms": 44.67327756881714,
+        "p10_ms": 30.08675193786621,
+        "p90_ms": 74.2548828125
+      },
+      "dense": {
+        "median_ms": 0.9211840033531189,
+        "mean_ms": 0.9216256007552147,
+        "p10_ms": 0.9186239838600159,
+        "p90_ms": 0.92467200756073
+      },
+      "prepacked": {
+        "median_ms": 0.02763199992477894,
+        "mean_ms": 0.027892400068230926,
+        "p10_ms": 0.025407999753952026,
+        "p90_ms": 0.03171199932694435
+      },
+      "dynamic": {
+        "median_ms": 0.0487040001899004,
+        "mean_ms": 0.049330000020563605,
+        "p10_ms": 0.04604800045490265,
+        "p90_ms": 0.05276799947023392
+      }
+    },
+    {
+      "batch": 2,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 32.64656066894531,
+      "dense_head_median_ms": 0.9211840033531189,
+      "dense_head_fraction_of_transformer_plus_head": 0.027442534860357186,
+      "prepacked_head_median_ms": 0.21404799818992615,
+      "dynamic_head_median_ms": 0.5604159832000732,
+      "head_speedup_prepacked": 4.303632882077909,
+      "head_speedup_dynamic": 1.6437504121367081,
+      "projected_total_speedup_prepacked": 1.0215192607150463,
+      "projected_total_speedup_dynamic": 1.0108642236218075,
+      "decode": {
+        "median_ms": 32.64656066894531,
+        "mean_ms": 44.67327756881714,
+        "p10_ms": 30.08675193786621,
+        "p90_ms": 74.2548828125
+      },
+      "dense": {
+        "median_ms": 0.9211840033531189,
+        "mean_ms": 0.9216256007552147,
+        "p10_ms": 0.9186239838600159,
+        "p90_ms": 0.92467200756073
+      },
+      "prepacked": {
+        "median_ms": 0.21404799818992615,
+        "mean_ms": 0.2239752011373639,
+        "p10_ms": 0.2009280025959015,
+        "p90_ms": 0.2178560048341751
+      },
+      "dynamic": {
+        "median_ms": 0.5604159832000732,
+        "mean_ms": 0.5604184031486511,
+        "p10_ms": 0.5568000078201294,
+        "p90_ms": 0.5636159777641296
+      }
+    },
+    {
+      "batch": 4,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 30.934800148010254,
+      "dense_head_median_ms": 0.8935680091381073,
+      "dense_head_fraction_of_transformer_plus_head": 0.028074578147589388,
+      "prepacked_head_median_ms": 0.0891840010881424,
+      "dynamic_head_median_ms": 0.12470400333404541,
+      "head_speedup_prepacked": 10.019375652982596,
+      "head_speedup_dynamic": 7.16551181395918,
+      "projected_total_speedup_prepacked": 1.0259278113405477,
+      "projected_total_speedup_dynamic": 1.0247545486256833,
+      "decode": {
+        "median_ms": 30.934800148010254,
+        "mean_ms": 35.853287887573245,
+        "p10_ms": 29.994304656982422,
+        "p90_ms": 72.591552734375
+      },
+      "dense": {
+        "median_ms": 0.8935680091381073,
+        "mean_ms": 0.88447560146451,
+        "p10_ms": 0.8652480244636536,
+        "p90_ms": 0.8987200260162354
+      },
+      "prepacked": {
+        "median_ms": 0.0891840010881424,
+        "mean_ms": 0.09076039977371693,
+        "p10_ms": 0.08476799726486206,
+        "p90_ms": 0.09321600198745728
+      },
+      "dynamic": {
+        "median_ms": 0.12470400333404541,
+        "mean_ms": 0.12511320021003486,
+        "p10_ms": 0.12044800072908401,
+        "p90_ms": 0.13065600395202637
+      }
+    },
+    {
+      "batch": 4,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 30.934800148010254,
+      "dense_head_median_ms": 0.8935680091381073,
+      "dense_head_fraction_of_transformer_plus_head": 0.028074578147589388,
+      "prepacked_head_median_ms": 0.07809599861502647,
+      "dynamic_head_median_ms": 0.13607999682426453,
+      "head_speedup_prepacked": 11.441917959752878,
+      "head_speedup_dynamic": 6.566490520220048,
+      "projected_total_speedup_prepacked": 1.026294610044403,
+      "projected_total_speedup_dynamic": 1.0243793548423112,
+      "decode": {
+        "median_ms": 30.934800148010254,
+        "mean_ms": 35.853287887573245,
+        "p10_ms": 29.994304656982422,
+        "p90_ms": 72.591552734375
+      },
+      "dense": {
+        "median_ms": 0.8935680091381073,
+        "mean_ms": 0.88447560146451,
+        "p10_ms": 0.8652480244636536,
+        "p90_ms": 0.8987200260162354
+      },
+      "prepacked": {
+        "median_ms": 0.07809599861502647,
+        "mean_ms": 0.07342080012895166,
+        "p10_ms": 0.05974400043487549,
+        "p90_ms": 0.08511999994516373
+      },
+      "dynamic": {
+        "median_ms": 0.13607999682426453,
+        "mean_ms": 0.13659039996564387,
+        "p10_ms": 0.1329600065946579,
+        "p90_ms": 0.1401599943637848
+      }
+    },
+    {
+      "batch": 4,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 30.934800148010254,
+      "dense_head_median_ms": 0.8935680091381073,
+      "dense_head_fraction_of_transformer_plus_head": 0.028074578147589388,
+      "prepacked_head_median_ms": 0.08452800288796425,
+      "dynamic_head_median_ms": 0.1438559964299202,
+      "head_speedup_prepacked": 10.571266072883173,
+      "head_speedup_dynamic": 6.211545095886296,
+      "projected_total_speedup_prepacked": 1.0260818030072878,
+      "projected_total_speedup_dynamic": 1.0241230511777553,
+      "decode": {
+        "median_ms": 30.934800148010254,
+        "mean_ms": 35.853287887573245,
+        "p10_ms": 29.994304656982422,
+        "p90_ms": 72.591552734375
+      },
+      "dense": {
+        "median_ms": 0.8935680091381073,
+        "mean_ms": 0.88447560146451,
+        "p10_ms": 0.8652480244636536,
+        "p90_ms": 0.8987200260162354
+      },
+      "prepacked": {
+        "median_ms": 0.08452800288796425,
+        "mean_ms": 0.08053479981608688,
+        "p10_ms": 0.0613120011985302,
+        "p90_ms": 0.09296000003814697
+      },
+      "dynamic": {
+        "median_ms": 0.1438559964299202,
+        "mean_ms": 0.14319719914346934,
+        "p10_ms": 0.12083200365304947,
+        "p90_ms": 0.152319997549057
+      }
+    },
+    {
+      "batch": 4,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 30.934800148010254,
+      "dense_head_median_ms": 0.8935680091381073,
+      "dense_head_fraction_of_transformer_plus_head": 0.028074578147589388,
+      "prepacked_head_median_ms": 0.23368000239133835,
+      "dynamic_head_median_ms": 0.5891839861869812,
+      "head_speedup_prepacked": 3.823895926026525,
+      "head_speedup_dynamic": 1.5166196469815931,
+      "projected_total_speedup_prepacked": 1.0211716453148347,
+      "projected_total_speedup_dynamic": 1.0096556330461075,
+      "decode": {
+        "median_ms": 30.934800148010254,
+        "mean_ms": 35.853287887573245,
+        "p10_ms": 29.994304656982422,
+        "p90_ms": 72.591552734375
+      },
+      "dense": {
+        "median_ms": 0.8935680091381073,
+        "mean_ms": 0.88447560146451,
+        "p10_ms": 0.8652480244636536,
+        "p90_ms": 0.8987200260162354
+      },
+      "prepacked": {
+        "median_ms": 0.23368000239133835,
+        "mean_ms": 0.23432320021092892,
+        "p10_ms": 0.23094399273395538,
+        "p90_ms": 0.23814399540424347
+      },
+      "dynamic": {
+        "median_ms": 0.5891839861869812,
+        "mean_ms": 0.5908932000398636,
+        "p10_ms": 0.5854719877243042,
+        "p90_ms": 0.5956159830093384
+      }
+    },
+    {
+      "batch": 8,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 31.176688194274902,
+      "dense_head_median_ms": 0.8722079992294312,
+      "dense_head_fraction_of_transformer_plus_head": 0.02721491542058819,
+      "prepacked_head_median_ms": 0.033135998994112015,
+      "dynamic_head_median_ms": 0.045504000037908554,
+      "head_speedup_prepacked": 26.322067410263234,
+      "head_speedup_dynamic": 19.16772148608497,
+      "projected_total_speedup_prepacked": 1.02688486788773,
+      "projected_total_speedup_dynamic": 1.0264780894962946,
+      "decode": {
+        "median_ms": 31.176688194274902,
+        "mean_ms": 31.38846073150635,
+        "p10_ms": 30.35807991027832,
+        "p90_ms": 33.350528717041016
+      },
+      "dense": {
+        "median_ms": 0.8722079992294312,
+        "mean_ms": 0.8722880035638809,
+        "p10_ms": 0.8694720268249512,
+        "p90_ms": 0.8742719888687134
+      },
+      "prepacked": {
+        "median_ms": 0.033135998994112015,
+        "mean_ms": 0.04375999995972961,
+        "p10_ms": 0.029888000339269638,
+        "p90_ms": 0.047680001705884933
+      },
+      "dynamic": {
+        "median_ms": 0.045504000037908554,
+        "mean_ms": 0.056053199945017694,
+        "p10_ms": 0.041471999138593674,
+        "p90_ms": 0.0562559999525547
+      }
+    },
+    {
+      "batch": 8,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 31.176688194274902,
+      "dense_head_median_ms": 0.8722079992294312,
+      "dense_head_fraction_of_transformer_plus_head": 0.02721491542058819,
+      "prepacked_head_median_ms": 0.03574400022625923,
+      "dynamic_head_median_ms": 0.058720000088214874,
+      "head_speedup_prepacked": 24.401521757731693,
+      "head_speedup_dynamic": 14.85367843867704,
+      "projected_total_speedup_prepacked": 1.0267990649940615,
+      "projected_total_speedup_dynamic": 1.0260437767958488,
+      "decode": {
+        "median_ms": 31.176688194274902,
+        "mean_ms": 31.38846073150635,
+        "p10_ms": 30.35807991027832,
+        "p90_ms": 33.350528717041016
+      },
+      "dense": {
+        "median_ms": 0.8722079992294312,
+        "mean_ms": 0.8722880035638809,
+        "p10_ms": 0.8694720268249512,
+        "p90_ms": 0.8742719888687134
+      },
+      "prepacked": {
+        "median_ms": 0.03574400022625923,
+        "mean_ms": 0.03761680005118251,
+        "p10_ms": 0.03017600066959858,
+        "p90_ms": 0.047807998955249786
+      },
+      "dynamic": {
+        "median_ms": 0.058720000088214874,
+        "mean_ms": 0.06094999983906746,
+        "p10_ms": 0.054655998945236206,
+        "p90_ms": 0.07177600264549255
+      }
+    },
+    {
+      "batch": 8,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 31.176688194274902,
+      "dense_head_median_ms": 0.8722079992294312,
+      "dense_head_fraction_of_transformer_plus_head": 0.02721491542058819,
+      "prepacked_head_median_ms": 0.03116799984127283,
+      "dynamic_head_median_ms": 0.0493599995970726,
+      "head_speedup_prepacked": 27.984086360089385,
+      "head_speedup_dynamic": 17.670340485196423,
+      "projected_total_speedup_prepacked": 1.0269496242919347,
+      "projected_total_speedup_dynamic": 1.0263513331729834,
+      "decode": {
+        "median_ms": 31.176688194274902,
+        "mean_ms": 31.38846073150635,
+        "p10_ms": 30.35807991027832,
+        "p90_ms": 33.350528717041016
+      },
+      "dense": {
+        "median_ms": 0.8722079992294312,
+        "mean_ms": 0.8722880035638809,
+        "p10_ms": 0.8694720268249512,
+        "p90_ms": 0.8742719888687134
+      },
+      "prepacked": {
+        "median_ms": 0.03116799984127283,
+        "mean_ms": 0.03131520003080368,
+        "p10_ms": 0.02812799997627735,
+        "p90_ms": 0.033952001482248306
+      },
+      "dynamic": {
+        "median_ms": 0.0493599995970726,
+        "mean_ms": 0.05099800005555153,
+        "p10_ms": 0.047168001532554626,
+        "p90_ms": 0.056703999638557434
+      }
+    },
+    {
+      "batch": 8,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 31.176688194274902,
+      "dense_head_median_ms": 0.8722079992294312,
+      "dense_head_fraction_of_transformer_plus_head": 0.02721491542058819,
+      "prepacked_head_median_ms": 0.2061920017004013,
+      "dynamic_head_median_ms": 0.5656159818172455,
+      "head_speedup_prepacked": 4.230076782981896,
+      "head_speedup_dynamic": 1.542049778061695,
+      "projected_total_speedup_prepacked": 1.021222271294731,
+      "projected_total_speedup_dynamic": 1.0096587826678034,
+      "decode": {
+        "median_ms": 31.176688194274902,
+        "mean_ms": 31.38846073150635,
+        "p10_ms": 30.35807991027832,
+        "p90_ms": 33.350528717041016
+      },
+      "dense": {
+        "median_ms": 0.8722079992294312,
+        "mean_ms": 0.8722880035638809,
+        "p10_ms": 0.8694720268249512,
+        "p90_ms": 0.8742719888687134
+      },
+      "prepacked": {
+        "median_ms": 0.2061920017004013,
+        "mean_ms": 0.2149372013285756,
+        "p10_ms": 0.20160000026226044,
+        "p90_ms": 0.20819200575351715
+      },
+      "dynamic": {
+        "median_ms": 0.5656159818172455,
+        "mean_ms": 0.5654107987880707,
+        "p10_ms": 0.5616639852523804,
+        "p90_ms": 0.5697600245475769
+      }
+    },
+    {
+      "batch": 16,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 31.46558380126953,
+      "dense_head_median_ms": 0.8795199990272522,
+      "dense_head_fraction_of_transformer_plus_head": 0.027191750703832403,
+      "prepacked_head_median_ms": 0.032336000353097916,
+      "dynamic_head_median_ms": 0.04371199943125248,
+      "head_speedup_prepacked": 27.199405907446767,
+      "head_speedup_dynamic": 20.12079086911837,
+      "projected_total_speedup_prepacked": 1.0268965063092996,
+      "projected_total_speedup_dynamic": 1.0265257594102566,
+      "decode": {
+        "median_ms": 31.46558380126953,
+        "mean_ms": 31.656457805633544,
+        "p10_ms": 30.64566421508789,
+        "p90_ms": 33.34521484375
+      },
+      "dense": {
+        "median_ms": 0.8795199990272522,
+        "mean_ms": 0.8789995968341827,
+        "p10_ms": 0.875648021697998,
+        "p90_ms": 0.8819199800491333
+      },
+      "prepacked": {
+        "median_ms": 0.032336000353097916,
+        "mean_ms": 0.03695080005563796,
+        "p10_ms": 0.029664000496268272,
+        "p90_ms": 0.04960000142455101
+      },
+      "dynamic": {
+        "median_ms": 0.04371199943125248,
+        "mean_ms": 0.04706159983761608,
+        "p10_ms": 0.04121600091457367,
+        "p90_ms": 0.05718399956822395
+      }
+    },
+    {
+      "batch": 16,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 31.46558380126953,
+      "dense_head_median_ms": 0.8795199990272522,
+      "dense_head_fraction_of_transformer_plus_head": 0.027191750703832403,
+      "prepacked_head_median_ms": 0.03288000077009201,
+      "dynamic_head_median_ms": 0.05860799923539162,
+      "head_speedup_prepacked": 26.74939107140389,
+      "head_speedup_dynamic": 15.006825186008676,
+      "projected_total_speedup_prepacked": 1.0268787710911267,
+      "projected_total_speedup_dynamic": 1.0260406993139382,
+      "decode": {
+        "median_ms": 31.46558380126953,
+        "mean_ms": 31.656457805633544,
+        "p10_ms": 30.64566421508789,
+        "p90_ms": 33.34521484375
+      },
+      "dense": {
+        "median_ms": 0.8795199990272522,
+        "mean_ms": 0.8789995968341827,
+        "p10_ms": 0.875648021697998,
+        "p90_ms": 0.8819199800491333
+      },
+      "prepacked": {
+        "median_ms": 0.03288000077009201,
+        "mean_ms": 0.03637480000033975,
+        "p10_ms": 0.030047999694943428,
+        "p90_ms": 0.04598399996757507
+      },
+      "dynamic": {
+        "median_ms": 0.05860799923539162,
+        "mean_ms": 0.06202120007947087,
+        "p10_ms": 0.055615998804569244,
+        "p90_ms": 0.07187200337648392
+      }
+    },
+    {
+      "batch": 16,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 31.46558380126953,
+      "dense_head_median_ms": 0.8795199990272522,
+      "dense_head_fraction_of_transformer_plus_head": 0.027191750703832403,
+      "prepacked_head_median_ms": 0.031136000528931618,
+      "dynamic_head_median_ms": 0.050992000848054886,
+      "head_speedup_prepacked": 28.247687053126842,
+      "head_speedup_dynamic": 17.248195489485326,
+      "projected_total_speedup_prepacked": 1.026935630244578,
+      "projected_total_speedup_dynamic": 1.0262886426298738,
+      "decode": {
+        "median_ms": 31.46558380126953,
+        "mean_ms": 31.656457805633544,
+        "p10_ms": 30.64566421508789,
+        "p90_ms": 33.34521484375
+      },
+      "dense": {
+        "median_ms": 0.8795199990272522,
+        "mean_ms": 0.8789995968341827,
+        "p10_ms": 0.875648021697998,
+        "p90_ms": 0.8819199800491333
+      },
+      "prepacked": {
+        "median_ms": 0.031136000528931618,
+        "mean_ms": 0.03110439998563379,
+        "p10_ms": 0.027871999889612198,
+        "p90_ms": 0.034015998244285583
+      },
+      "dynamic": {
+        "median_ms": 0.050992000848054886,
+        "mean_ms": 0.05156720015220344,
+        "p10_ms": 0.04761600121855736,
+        "p90_ms": 0.0589120015501976
+      }
+    },
+    {
+      "batch": 16,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 31.46558380126953,
+      "dense_head_median_ms": 0.8795199990272522,
+      "dense_head_fraction_of_transformer_plus_head": 0.027191750703832403,
+      "prepacked_head_median_ms": 0.2072960063815117,
+      "dynamic_head_median_ms": 0.568448007106781,
+      "head_speedup_prepacked": 4.24282172329247,
+      "head_speedup_dynamic": 1.547230332469153,
+      "projected_total_speedup_prepacked": 1.0212239618477432,
+      "projected_total_speedup_dynamic": 1.009710672505455,
+      "decode": {
+        "median_ms": 31.46558380126953,
+        "mean_ms": 31.656457805633544,
+        "p10_ms": 30.64566421508789,
+        "p90_ms": 33.34521484375
+      },
+      "dense": {
+        "median_ms": 0.8795199990272522,
+        "mean_ms": 0.8789995968341827,
+        "p10_ms": 0.875648021697998,
+        "p90_ms": 0.8819199800491333
+      },
+      "prepacked": {
+        "median_ms": 0.2072960063815117,
+        "mean_ms": 0.20716960057616235,
+        "p10_ms": 0.20294399559497833,
+        "p90_ms": 0.2099519968032837
+      },
+      "dynamic": {
+        "median_ms": 0.568448007106781,
+        "mean_ms": 0.5686364017426968,
+        "p10_ms": 0.5660799741744995,
+        "p90_ms": 0.5713279843330383
+      }
+    },
+    {
+      "batch": 32,
+      "k": 13,
+      "density": 8.556234203875316e-05,
+      "transformer_decode_median_ms": 32.907297134399414,
+      "dense_head_median_ms": 0.8940960168838501,
+      "dense_head_fraction_of_transformer_plus_head": 0.026451454615559415,
+      "prepacked_head_median_ms": 0.03399999998509884,
+      "dynamic_head_median_ms": 0.04676800034940243,
+      "head_speedup_prepacked": 26.29694168457956,
+      "head_speedup_dynamic": 19.117687525745886,
+      "projected_total_speedup_prepacked": 1.0261099620148526,
+      "projected_total_speedup_dynamic": 1.0257123973345847,
+      "decode": {
+        "median_ms": 32.907297134399414,
+        "mean_ms": 35.76545467376709,
+        "p10_ms": 30.957216262817383,
+        "p90_ms": 44.401119232177734
+      },
+      "dense": {
+        "median_ms": 0.8940960168838501,
+        "mean_ms": 0.8977767989039421,
+        "p10_ms": 0.8899199962615967,
+        "p90_ms": 0.9110080003738403
+      },
+      "prepacked": {
+        "median_ms": 0.03399999998509884,
+        "mean_ms": 0.03807800002396107,
+        "p10_ms": 0.030527999624609947,
+        "p90_ms": 0.04979199916124344
+      },
+      "dynamic": {
+        "median_ms": 0.04676800034940243,
+        "mean_ms": 0.06085680052638054,
+        "p10_ms": 0.04057599976658821,
+        "p90_ms": 0.05929600074887276
+      }
+    },
+    {
+      "batch": 32,
+      "k": 428,
+      "density": 0.0028169755686604887,
+      "transformer_decode_median_ms": 32.907297134399414,
+      "dense_head_median_ms": 0.8940960168838501,
+      "dense_head_fraction_of_transformer_plus_head": 0.026451454615559415,
+      "prepacked_head_median_ms": 0.03276799991726875,
+      "dynamic_head_median_ms": 0.05921600013971329,
+      "head_speedup_prepacked": 27.285645115393844,
+      "head_speedup_dynamic": 15.098892440798673,
+      "projected_total_speedup_prepacked": 1.0261483398242968,
+      "projected_total_speedup_dynamic": 1.025325093173698,
+      "decode": {
+        "median_ms": 32.907297134399414,
+        "mean_ms": 35.76545467376709,
+        "p10_ms": 30.957216262817383,
+        "p90_ms": 44.401119232177734
+      },
+      "dense": {
+        "median_ms": 0.8940960168838501,
+        "mean_ms": 0.8977767989039421,
+        "p10_ms": 0.8899199962615967,
+        "p90_ms": 0.9110080003738403
+      },
+      "prepacked": {
+        "median_ms": 0.03276799991726875,
+        "mean_ms": 0.03623399996431544,
+        "p10_ms": 0.02985600009560585,
+        "p90_ms": 0.04681599885225296
+      },
+      "dynamic": {
+        "median_ms": 0.05921600013971329,
+        "mean_ms": 0.06168760014697909,
+        "p10_ms": 0.0560000017285347,
+        "p90_ms": 0.06931199878454208
+      }
+    },
+    {
+      "batch": 32,
+      "k": 4096,
+      "density": 0.02695871946082561,
+      "transformer_decode_median_ms": 32.907297134399414,
+      "dense_head_median_ms": 0.8940960168838501,
+      "dense_head_fraction_of_transformer_plus_head": 0.026451454615559415,
+      "prepacked_head_median_ms": 0.032816000282764435,
+      "dynamic_head_median_ms": 0.05116799846291542,
+      "head_speedup_prepacked": 27.245734068129128,
+      "head_speedup_dynamic": 17.47373443836886,
+      "projected_total_speedup_prepacked": 1.0261468445199193,
+      "projected_total_speedup_dynamic": 1.0255754633907532,
+      "decode": {
+        "median_ms": 32.907297134399414,
+        "mean_ms": 35.76545467376709,
+        "p10_ms": 30.957216262817383,
+        "p90_ms": 44.401119232177734
+      },
+      "dense": {
+        "median_ms": 0.8940960168838501,
+        "mean_ms": 0.8977767989039421,
+        "p10_ms": 0.8899199962615967,
+        "p90_ms": 0.9110080003738403
+      },
+      "prepacked": {
+        "median_ms": 0.032816000282764435,
+        "mean_ms": 0.03316560015082359,
+        "p10_ms": 0.030400000512599945,
+        "p90_ms": 0.03558399900794029
+      },
+      "dynamic": {
+        "median_ms": 0.05116799846291542,
+        "mean_ms": 0.05299200010485947,
+        "p10_ms": 0.048928000032901764,
+        "p90_ms": 0.06006399914622307
+      }
+    },
+    {
+      "batch": 32,
+      "k": 32768,
+      "density": 0.21566975568660487,
+      "transformer_decode_median_ms": 32.907297134399414,
+      "dense_head_median_ms": 0.8940960168838501,
+      "dense_head_fraction_of_transformer_plus_head": 0.026451454615559415,
+      "prepacked_head_median_ms": 0.2122880071401596,
+      "dynamic_head_median_ms": 0.5852159857749939,
+      "head_speedup_prepacked": 4.211712328589236,
+      "head_speedup_dynamic": 1.5278051840976463,
+      "projected_total_speedup_prepacked": 1.0205862484940533,
+      "projected_total_speedup_dynamic": 1.0092223605317572,
+      "decode": {
+        "median_ms": 32.907297134399414,
+        "mean_ms": 35.76545467376709,
+        "p10_ms": 30.957216262817383,
+        "p90_ms": 44.401119232177734
+      },
+      "dense": {
+        "median_ms": 0.8940960168838501,
+        "mean_ms": 0.8977767989039421,
+        "p10_ms": 0.8899199962615967,
+        "p90_ms": 0.9110080003738403
+      },
+      "prepacked": {
+        "median_ms": 0.2122880071401596,
+        "mean_ms": 0.21214639991521836,
+        "p10_ms": 0.20787200331687927,
+        "p90_ms": 0.21436800062656403
+      },
+      "dynamic": {
+        "median_ms": 0.5852159857749939,
+        "mean_ms": 0.5847203992307186,
+        "p10_ms": 0.5814719796180725,
+        "p90_ms": 0.5877760052680969
+      }
+    }
+  ]
+}
